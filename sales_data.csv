@@ -1,0 +1,11 @@
+product,category,price,quantity,city,rating
+Laptop,Electronics,65000,3,Delhi,4.7
+Phone,Electronics,30000,5,Mumbai,4.5
+Shirt,Fashion,1500,10,Delhi,4.0
+Shoes,Fashion,3000,7,Bangalore,4.3
+Book,Education,500,20,Mumbai,4.8
+Tablet,Electronics,25000,4,Delhi,4.4
+Bag,Fashion,1200,12,Pune,3.9
+Course,Education,5000,6,Bangalore,4.9
+Watch,Accessories,7000,8,Mumbai,4.2
+Headphones,Electronics,4000,9,Pune,4.6
