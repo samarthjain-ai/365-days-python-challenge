@@ -1,0 +1,28 @@
+<body>
+
+    <h1>Student Result Checker 🚀</h1>
+
+    <form method="POST">
+
+        <input type="text" name="student_name" placeholder="Enter Name">
+
+        <br><br>
+
+        <input type="number" name="marks" placeholder="Enter Marks">
+        <h2>All Students</h2>
+
+        {% for student in students %}
+
+        <p>
+        {{ student.name }} - {{ student.marks }}
+        </p>
+
+        {% endfor %}
+
+        <br><br>
+
+        <button type="submit">Check Result</button>
+
+    </form>
+
+</body>
