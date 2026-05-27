@@ -1,0 +1,106 @@
+<body style="
+background-color:#0f172a;
+font-family:Arial;
+color:white;
+">
+
+<center>
+
+<h1 style="
+color:cyan;
+text-shadow:0px 0px 10px cyan;
+">
+Student Result Checker 🚀
+</h1>
+
+<p style="color:lightgray;">
+AI Powered Student Dashboard
+</p>
+
+<form method="POST">
+
+    <input type="text"
+           name="student_name"
+           placeholder="Enter Name"
+           style="
+           padding:10px;
+           width:200px;
+           background-color:#1e293b;
+           color:white;
+           border:1px solid cyan;
+           border-radius:10px;
+           ">
+
+    <br><br>
+
+    <input type="number"
+           name="marks"
+           placeholder="Enter Marks"
+           style="
+           padding:10px;
+           width:200px;
+           background-color:#1e293b;
+           color:white;
+           border:1px solid cyan;
+           border-radius:10px;
+           ">
+
+    <br><br>
+
+    <button type="submit"
+            style="
+            background-color:cyan;
+            color:black;
+            padding:10px 20px;
+            border:none;
+            border-radius:10px;
+            font-weight:bold;
+            cursor:pointer;
+            box-shadow:0px 0px 10px cyan;
+            ">
+        Submit
+    </button>
+
+</form>
+
+<br><br>
+
+<h2 style="color:cyan;">
+All Students
+</h2>
+
+<table border="1"
+       cellpadding="10"
+       style="
+       border-collapse:collapse;
+       background-color:#1e293b;
+       width:50%;
+       color:white;
+       box-shadow:0px 0px 20px cyan;
+       ">
+
+<tr style="
+background-color:cyan;
+color:black;
+">
+    <th>Name</th>
+    <th>Marks</th>
+</tr>
+
+{% for index, student in students.iterrows() %}
+
+<tr>
+
+    <td>{{ student["Name"] }}</td>
+
+    <td>{{ student["Marks"] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</center>
+
+</body>
