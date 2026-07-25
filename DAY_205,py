@@ -1,0 +1,19 @@
+
+import json as j
+
+def user_input():
+    name= input("Enter your name here : ")
+    age = input("Enter your age :")
+    course = input("Enter your course : ")
+    student = {
+    "name": name,
+    "age": age,
+    "course": course
+    }
+    return student
+
+with open ("students.json","w") as f:
+    student = user_input()
+    j.dump(student,f,indent=True)
+    
+
