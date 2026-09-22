@@ -1,0 +1,32 @@
+import random
+from datetime import datetime, timedelta
+
+def generate_otp():
+
+    otp = random.randint(100000, 999999)
+
+    return otp
+
+
+def create_otp():
+
+    otp = generate_otp()
+    current_time = datetime.now()
+    expires_at = current_time + timedelta(minutes=5)
+
+    return {
+        "otp": otp,
+        "expires_at": expires_at,
+        "attempts": 0,
+        "used": False
+    }
+
+
+def request_otp(email):
+
+    otp_data = create_otp()
+
+    # Tomorrow:
+    # send_otp_email(email, otp_data["otp"])
+
+    return otp_data
