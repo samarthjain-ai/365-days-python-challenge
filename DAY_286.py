@@ -22,7 +22,28 @@ def create_users_table():
     connection.commit()
     connection.close()
 
+def insert_user(username, email, password):
+    connection = get_connection()
+
+    connection.execute("""
+        INSERT INTO users (username, email, password)
+        VALUES (?, ?, ?)
+    """, (username, email, password))
+
+    connection.commit()
+    connection.close()
+
+    return "User inserted successfully!"
 
 if __name__ == "__main__":
     create_users_table()
-    print("Users table created successfully!")
+
+    result = insert_user(
+        "samarth_test_2",
+        "samarth_t2@example.com",
+        "dummy_hash_testing"
+    )
+
+    print(result)
+
+
