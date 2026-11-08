@@ -1,0 +1,93 @@
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #f5f0e8,
+        #e8dfd2
+    );
+    color: #3d342e;
+}
+
+/* Main content area */
+.block-container {
+    max-width: 850px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Registration card */
+.registration-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #d8c8b5;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.registration-card h3 {
+    color: #704653;
+    font-size: 25px;
+    margin: 0;
+}
+
+/* Main heading */
+h1, h2 {
+    color: #704653 !important;
+    font-weight: 600;
+}
+
+/* Subheading */
+h3 {
+    color: #8b684f;
+}
+
+/* Paragraphs and labels */
+p, label {
+    color: #51443b !important;
+    font-size: 16px;
+}
+
+/* Text input */
+.stTextInput input {
+    background-color: #ffffff;
+    color: #3d342e;
+    border: 1px solid #bca995;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Input focus */
+.stTextInput input:focus {
+    border-color: #8b5263;
+    box-shadow: 0 0 0 2px rgba(139, 82, 99, 0.15);
+}
+
+/* Button */
+.stButton > button {
+    background-color: #704653;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+.stButton > button:hover {
+    background-color: #8b5263;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+footer {
+    visibility: hidden;
+}
