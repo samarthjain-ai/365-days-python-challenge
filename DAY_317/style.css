@@ -1,0 +1,36 @@
+.stApp {
+    background-color: #000000;
+    color: rgba(131, 190, 216, 0.944);
+    font-size: large;
+    font-weight: bold;
+}
+
+button {
+    border: 2px solid rgb(92, 236, 178);
+    border-radius: 10px;
+    padding: 12px;
+    margin: 8px;
+}
+
+.action-btn {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 2s;
+}
+
+.action-btn:hover {
+    background-color: #333333;
+}
+
+.stTextInput input {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.stTextInput input:focus {
+    border-color: #2f81f7;
+}
